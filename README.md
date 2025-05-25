@@ -13,7 +13,7 @@
 - PHP
 - JavaScript
 - HTML5 e CSS3
-- OpenWeatherMap ((https://openweathermap.org/api/one-call-3))
+- OpenWeatherMap (https://openweathermap.org/api/one-call-3)
 
 ## 📦 Estrutura do projeto
 
