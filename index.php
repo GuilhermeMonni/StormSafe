@@ -9,6 +9,7 @@ require_once 'config.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/pagInicial.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
     <script src="./scripts/mapa.js" defer></script>
     <script src="./scripts/icons.js" defer></script>
