@@ -5,7 +5,6 @@
 ## ⚙️ Funcionalidades
 
 - Consulta de clima atual por cidade
-- Interface amigável com layout responsivo
 - Conexão com APIs meteorológicas para dados atualizados
 - Exibição de informações como temperatura, umidade e condições climáticas
 
@@ -14,7 +13,7 @@
 - PHP
 - JavaScript
 - HTML5 e CSS3
-- [API meteorológica utilizada] (especifique a API, se aplicável)
+- OpenWeatherMap ((https://openweathermap.org/api/one-call-3))
 
 ## 📦 Estrutura do projeto
 
