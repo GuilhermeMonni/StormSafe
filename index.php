@@ -90,6 +90,8 @@ require_once 'config.php';
     function buscarCid(event) {
         if (event) event.preventDefault()
 
+        deleteImg(1)
+
         const nomeCidade = document.querySelector('#cidade').value.trim()
         if (nomeCidade === '') return false
 

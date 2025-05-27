@@ -26,6 +26,13 @@ function imgs(a, b, classe){ //funcao para definir as imagens
       criarImg(icon, b, classe)
     }
 
+    //nublado
+    if (a.includes("nublado")) {
+      const icon = "./img/nublado.png"
+
+      criarImg(icon, b, classe)
+    }
+
     //nevoa
     if(a.includes("névoa")){
       const icon = "./img/nevoa.png"
@@ -67,6 +74,13 @@ function imgs(a, b, classe){ //funcao para definir as imagens
 
       criarImg(icon, b, classe)
     }
+
+    //ceu limpo
+    if (a.includes("limpo")) {
+      const icon = "./img/sol.png"
+
+      criarImg(icon, b, classe)
+    }
 }
 
 //criar imagem cida
@@ -88,11 +102,15 @@ function deleteImg(a){
   if(a == 1){
     let imgBuscar = document.querySelector(".imgClasse1")
 
+    if(!imgBuscar){
+      return true 
+    } else{
       imgBuscar.remove()
-  }
-  if(a == 2){
+    }
+
+  }if(a == 2){
     let imgAtual = document.querySelector(".imgClasse2")
 
     imgAtual.remove()
-  }
+  } 
 }
