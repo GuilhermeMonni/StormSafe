@@ -8,6 +8,7 @@ require_once 'config.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/pagInicial.css">
+    <link rel="stylesheet" href="estilos/animacoes.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
@@ -142,18 +143,19 @@ require_once 'config.php';
 <body onload="carregarMapa();">
     <header>
         <div class="nav-logo">
-            <img src="img/logo-stormsafe.png" alt="Logo StormSafe">
+            <img class="logo-storm" src="img/logo-stormsafe.png" alt="Logo StormSafe">
         </div>
         <div class="nav-txt">
-            <h3>Monitore o clima, identifique riscos e ajude sua comunidade</h3>
+            <h3 class="txt-nav">Monitore o clima, identifique riscos e ajude sua comunidade</h3>
         </div>
     </header>
     <main>
-        <h3 id="txt-inicio">Verifique o clima das cidades</h3>
+        <h3 class="txt-inicio" id="txt-inicio">Verifique o clima das cidades</h3>
         <div class="climas">
             <div class="buscarClima">
                 <form method="get" onsubmit="return buscarCid(event)">
-                    <input type="text" name="cidade" id="cidade" placeholder="Digite o nome da cidade">
+                    <input class="input-cidade" type="text" name="cidade" id="cidade"
+                        placeholder="Digite o nome da cidade">
                     <input class="btnClima" type="button" onclick="buscarCid(), buscarIcon()" value="Buscar">
                     <div class="infos infoBuscar">
                         <h2 class="classeBuscarClima" id="nomeCidade"></h2>

@@ -1,0 +1,27 @@
+@keyframes animacaoCair{ 
+    from{
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes animacaoAparecer{ 
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.buscarClima, .climaAtual{
+    animation: .8s ease-in-out animacaoCair;
+}
+
+.logo-storm, .btnClima2, .btnClima, .input-cidade{
+    animation: 1.3s linear animacaoAparecer;
+}
