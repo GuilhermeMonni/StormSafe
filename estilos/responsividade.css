@@ -1,0 +1,58 @@
+@media screen and (300px <= width <= 1000px){
+    header{
+        height: 17vh;
+        width: 100%;
+    }
+
+    .climas{
+        grid-template-columns: 80%;
+        gap: 7%;
+        margin: 0 auto 20%;
+        padding: 0;
+    }
+    .climas div{
+        padding: 5%;
+        height: 45vh;
+    }
+
+    #txt-mapa{
+        margin: 90% auto 0;
+    }
+    #mapa{
+        margin: 5% auto;
+        width: 80%;
+    }
+
+    footer{
+        width: 100%;
+    }
+    .footer-links{
+        position: absolute;
+        left: 8px;
+        top: 10px;
+    }
+
+    .footer-links img{
+        width: 15%;
+        margin: 0 3px;
+    }
+    .footer-cop{
+        width: 9%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        right: 0;
+        top: 2px;
+    }
+    .footer-cop img{
+        width: 25%;
+    }
+    .footer-cop p{
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.7em;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        color: #fff;
+    }
+}

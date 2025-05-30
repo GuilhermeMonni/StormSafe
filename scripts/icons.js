@@ -113,4 +113,4 @@ function deleteImg(a){
 
     imgAtual.remove()
   } 
-}
+} 

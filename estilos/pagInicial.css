@@ -19,8 +19,11 @@ body{
   background-color: var(--cor5);
 }
 
-.nav-logo {
+header{
   background-color: var(--cor1);
+}
+
+.nav-logo {
   height: 10vh;
   position: relative;
 }
@@ -34,7 +37,6 @@ body{
 }
 
 .nav-txt {
-  background-color: var(--cor1);
   width: 100%;
   height: 5vh;
   text-align: center;
@@ -190,3 +192,6 @@ footer {
   font-style: normal;
   color: #fff;
 }
+
+
+
