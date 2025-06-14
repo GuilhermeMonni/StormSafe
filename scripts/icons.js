@@ -77,9 +77,19 @@ function imgs(a, b, classe){ //funcao para definir as imagens
 
     //ceu limpo
     if (a.includes("limpo")) {
-      const icon = "./img/sol.png"
+      let data = new Date()
+      let horas = data.getHours()
 
-      criarImg(icon, b, classe)
+      if(horas >= 18){
+        const icon = "./img/lua-cheia.png"
+
+        criarImg(icon, b, classe)
+
+      }else{
+        const icon = "./img/sol.png"
+
+        criarImg(icon, b, classe)
+      }
     }
 }
 
@@ -91,7 +101,8 @@ function criarImg(a, b, classe) {
 
   let img = document.createElement("img")
   img.src = a
-  img.style.width = "50%"
+  img.style.width = "40%"
+  img.style.margin = "10%"
   img.classList.add(classe)
 
   divInfos.appendChild(img)

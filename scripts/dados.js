@@ -1,25 +1,6 @@
-<?php
-require_once 'config.php';
-?>
-<!DOCTYPE html>
-<html lang="pt-br">
+const apiKey = "fad4206b462bd563b99496c8ab24e956"
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/pagInicial.css">
-    <link rel="stylesheet" href="estilos/animacoes.css">
-    <link rel="stylesheet" href="estilos/responsividade.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
-    <script src="./scripts/mapa.js" defer></script>
-    <script src="./scripts/icons.js" defer></script>
-    <script>
-    //chave api
-    window.apiKey = "<?php echo $apiKey ?>"
-
-    //localizacao do usuario
+//localizacao do usuario
     function buscarLoc() {
         if (navigator.geolocation) {
             const options = {
@@ -44,7 +25,6 @@ require_once 'config.php';
                             let temperatura = document.querySelector('#temperatura1')
                             let descricao = document.querySelector('#descricao1')
                             let umidade = document.querySelector('#umidade1')
-                            let alertas = document.querySelector('.alertas')
 
                             cidade.innerText = dado.name
                             temperatura.innerText = `Temperatura: ${Math.round(dado.main.temp)}°C`
@@ -139,66 +119,3 @@ require_once 'config.php';
 
         return false
     }
-    </script>
-    <title>StormSafe</title>
-</head>
-
-<body onload="carregarMapa();">
-    <header>
-        <div class="nav-logo">
-            <img class="logo-storm" src="img/logo-stormsafe.png" alt="Logo StormSafe">
-        </div>
-        <div class="nav-txt">
-            <h3 class="txt-nav">Monitore o clima, identifique riscos e ajude sua comunidade</h3>
-        </div>
-    </header>
-    <main>
-        <h3 class="txt-inicio" id="txt-inicio">Verifique o clima das cidades</h3>
-        <div class="climas">
-            <div class="buscarClima">
-                <form method="get" onsubmit="return buscarCid(event)">
-                    <input class="input-cidade" type="text" name="cidade" id="cidade"
-                        placeholder="Digite o nome da cidade">
-                    <input class="btnClima" type="button" onclick="buscarCid(), buscarIcon()" value="Buscar">
-                    <div class="infos infoBuscar">
-                        <h2 class="classeBuscarClima" id="nomeCidade"></h2>
-                        <p class="classeBuscarClima" id="temperatura"></p>
-                        <p class="classeBuscarClima descricaoBuscar" id="descricao"></p>
-                        <p class="classeBuscarClima" id="umidade"></p>
-                    </div>
-                </form>
-            </div>
-
-            <div class="climaAtual">
-                <button class="btnClima2" type="button" onclick="buscarLoc(), buscarIcon()">Buscar minha
-                    localização</button>
-                <div class="infos infoAtual">
-                    <h2 class="classeClima" id="nomeCidade1"></h2>
-                    <p class="classeClima" id="temperatura1"></p>
-                    <p class="classeClima descricaoAtual" id="descricao1"></p>
-                    <p class="classeClima" id="umidade1"></p>
-                </div>
-            </div>
-        </div>
-
-        <h3 id="txt-inicio">Cidades pré-definidas</h3>
-        <div id="mapa">
-        </div>
-    </main>
-    <footer>
-        <div class="footer-links">
-            <a href="https://github.com/GuilhermeMonni" target="_blank"><img src="./img/github.png"
-                    alt="Logo GitHub"></a>
-            <a href="https://www.instagram.com/monni.05/" target="_blank"><img src="./img/instagram.png"
-                    alt="Logo Instagram"></a>
-            <a href="https://www.linkedin.com/in/guilherme-monni-a542a9244" target="_blank"><img
-                    src="./img/linkedin.png" alt="Logo Linkedin"></a>
-        </div>
-        <div class="footer-cop">
-            <p>&copy; 2025 StormSafe.</p>
-            <img src="./img/logo.png" alt="Logo pessoal">
-        </div>
-    </footer>
-</body>
-
-</html>
