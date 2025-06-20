@@ -193,5 +193,24 @@ footer {
   color: #fff;
 }
 
+/* Aplica à barra de rolagem de qualquer elemento com overflow */
+::-webkit-scrollbar {
+  width: 6px; /* largura da barra vertical */
+  height: 8px; /* altura da barra horizontal */
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--cor1); /* cor do "botão" da rolagem */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--cor4); /* muda a cor ao passar o mouse */
+}
+
+
 
 
