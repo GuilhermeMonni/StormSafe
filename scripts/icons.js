@@ -14,7 +14,7 @@ function buscarIcon() { //resultado descricao
     }
 
     
-  }, 2200);
+  }, 800);
 }
 
 //definir imgs
@@ -125,3 +125,4 @@ function deleteImg(a){
     imgAtual.remove()
   } 
 } 
+  
