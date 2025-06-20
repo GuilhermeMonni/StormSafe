@@ -89,7 +89,9 @@ function buscarCid(event) {
             const txtTemperatura = document.querySelector('#temperatura')
             const txtDescricao = document.querySelector('#descricao')
             const txtUmidade = document.querySelector('#umidade')
+            const inputCidade = document.querySelector('#cidade') //input txt cidade
 
+            inputCidade.value = ''
             txtNomeCidade.innerText = cidade
             txtTemperatura.innerText = `Temperatura: ${temperatura}°C`
             txtDescricao.innerText = `Descrição: ${descricao}`
