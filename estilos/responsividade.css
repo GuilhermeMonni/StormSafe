@@ -41,12 +41,12 @@
         position: absolute;
         display: flex;
         align-items: center;
-        right: 90px;
+        right: 70px;
         top: 2px;
     }
     .footer-cop img{
         width: 100%;
-        margin: 3px auto;
+        margin: 0 auto;
     }
     .footer-cop p{
         margin: 5px auto;
