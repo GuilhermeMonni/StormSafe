@@ -32,6 +32,8 @@ function buscarLoc() {
                             `Descrição: ${dado.weather[0].description}`
                         umidade.innerText =
                             `Umidade: ${dado.main.humidity}%`
+
+                        buscarIcon()
                     }).catch(() => {
                         document.querySelector('.climaAtual').innerHTML =
                             "Erro ao obter clima local."
